@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dashboard
 
-Currently, two official plugins are available:
+Dashboard for Accuknox with 3 categories.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Deployment Link
+https://dashboard-accuknox.onrender.com
 
-## Expanding the ESLint configuration
+## Features
+● Add widgets to each dashboard category.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+● Search across widgets using a query in the navbar (no fuzzy search).
 
-- Configure the top-level `parserOptions` property like this:
+● Time filter to filter the widgets based on the time of widget creation.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+● Users can go to add category section and uncheck
+from category list to remove a widget.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+● Directly removing a widget from home by clicking on the cross icon.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+● Resetting the dashboard to the default state.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tech Stack
+React, Redux, Shadcn/ui, TailwindCSS
