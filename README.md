@@ -20,5 +20,32 @@ from category list to remove a widget.
 
 ● Resetting the dashboard to the default state.
 
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/PranavvvSingh/dashboard-accuknox.git
+```
+
+Go to the project directory
+
+```bash
+  cd .\dashboard-accuknox\
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
 ## Tech Stack
 React, Redux, Shadcn/ui, TailwindCSS
